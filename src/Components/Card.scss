@@ -1,0 +1,61 @@
+.card {
+  margin: 0 5vw 1vh 5vw;
+  width: 39.5vw;
+  img {
+    width: 100%;
+    border: 3px solid white;
+  }
+  .buttonContainer {
+    height: 2rem;
+    display: flex;
+    text-align: center;
+
+    .gitHubButton {
+      background-color: #fc3836;
+      width: 50%;
+      padding-top: 5px;
+      border: 2px solid grey;
+      border-radius: 5%;
+      a {
+        text-decoration: none;
+        p {
+          color: #fff;
+        }
+      }
+    }
+    .sourceButton {
+      background-color: #fc3836;
+      width: 50%;
+      padding-top: 5px;
+      border: 2px solid grey;
+      border-radius: 5%;
+      a {
+        text-decoration: none;
+        p {
+          color: #fff;
+        }
+      }
+    }
+    .sourceButton:hover {
+      transition: 0.5s ease-in;
+      background-color: #107e7d;
+      .sourceText {
+        color: #f9dbbd;
+        transition: 0.5s ease-in;
+      }
+    }
+    .gitHubButton:hover {
+      transition: 0.5s ease-in;
+      background-color: #107e7d;
+      .gitText {
+        color: #f9dbbd;
+        transition: 0.5s ease-in;
+      }
+    }
+  }
+  .projectDescription {
+    color: #fff;
+    padding-left: 0.5rem;
+    font-size: 1.5rem;
+  }
+}

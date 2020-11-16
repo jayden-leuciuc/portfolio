@@ -1,0 +1,62 @@
+.about-container {
+  height: 100%;
+  width: 100%;
+  background-color: #fad0a7;
+  .text-container {
+    font-family: "Esteban", serif;
+    font-size: 2rem;
+    color: #ffffff;
+    height: 100%;
+
+    h1 {
+      padding: 40px 0 10px 40px;
+      span {
+        animation: pulse 1s ease-out infinite;
+      }
+    }
+    .p-container {
+      padding: 0 12.5rem 10rem 12.5rem;
+      line-height: 1.5;
+
+      a {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: bold;
+      }
+      a:hover {
+        color: #107e7d;
+        transition: 0.5s ease-in;
+      }
+    }
+    h6 {
+      padding-left: 12.5rem;
+      font-size: 2rem;
+    }
+    .icons {
+      padding: 0 0 5rem 12.5rem;
+      font-size: 3rem;
+      .icon:hover {
+        color: #107e7d;
+        animation: scrollDown 1s ease-out infinite;
+      }
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (max-device-width: 960px) {
+  .p-container {
+    font-size: 2rem;
+    color: rebeccapurple;
+  }
+}

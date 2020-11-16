@@ -7,8 +7,54 @@
   align-items: center;
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
-  font-size: 3rem;
+  animation: bgColor 15s ease infinite;
+
   .text-container {
     margin-top: 30vh;
+    .intro {
+      font-size: 4rem;
+    }
+    .name {
+      font-size: 4.5rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+  }
+}
+.iconArrow {
+  font-size: 3rem;
+  animation: scrollDown 2s ease-out infinite;
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  0% {
+    transform: translateY(0);
+  }
+}
+@keyframes bgColor {
+  0% {
+    background-color: #fc3836;
+  }
+  50% {
+    background-color: #cc3735;
+  }
+  100% {
+    background-color: #fc3836;
+  }
+}
+
+@media screen and (max-device-width: 960px) {
+  .hero-container {
+    h1 {
+      font-size: 1rem;
+    }
+    background-color: yellow;
   }
 }
