@@ -10,6 +10,7 @@
 
     h1 {
       padding: 40px 0 10px 40px;
+      font-family: "Montserrat", sans-serif;
       span {
         animation: pulse 1s ease-out infinite;
       }
@@ -54,9 +55,27 @@
     opacity: 1;
   }
 }
-@media screen and (max-device-width: 960px) {
-  .p-container {
-    font-size: 2rem;
-    color: rebeccapurple;
+@media screen and (max-width: 820px) {
+  .about-container {
+    .text-container {
+      font-size: 1rem;
+      .p-container {
+        padding: 0 6.25rem 5rem 6.25rem;
+        line-height: 1.5;
+
+        .social-icon:hover {
+          color: #107e7d;
+          animation: scrollDown 1s ease-out infinite;
+        }
+      }
+      h6 {
+        font-size: 1rem;
+        padding-left: 6.25rem;
+      }
+      .icons {
+        padding: 0 0 2.5rem 6.25rem;
+        font-size: 1.5rem;
+      }
+    }
   }
 }

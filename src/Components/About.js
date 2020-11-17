@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.scss'
-import { FaHtml5, FaCss3, FaNodeJs, FaSass, FaReact, FaGitAlt  } from "react-icons/fa";
+import { FaHtml5, FaCss3, FaNodeJs, FaSass, FaReact, FaGitAlt, FaTwitter, FaLinkedin, FaGithub  } from "react-icons/fa";
 import {DiMongodb} from "react-icons/di"
 function About() {
     return (
@@ -9,9 +9,19 @@ function About() {
                 <h1>About<span>_</span></h1>
                 <div className="p-container">
                 <p>I'm a self taught developer located in Knoxville, Tennesee. 
-                    I focus on front end web development, although I have confidence in my backend.</p>
+                I focus on front end web development, but I do backend as well.</p>
+                <p>Social: 
+                    <div className="social-icons-container">
+                    <FaGithub className="social-icon"/>
+                <FaLinkedin className="social-icon"/>
+                <FaTwitter className="social-icon"/>
+                    </div>
+                
+                </p>
                 <p>If you would like to contact me: <span><a href="mailto: leuciucjayden@gmail.com">leuciucjayden@gmail.com</a></span></p>
                 <p>Resume: <span><a href="/public/media/Leuciuc, Jayden Resume.pdf">Leuciuc, Jayden Resume 2020</a></span></p>
+
+                
                 </div>
                 <h6>This is the technology I like to use:</h6>
                 <div class="icons">
