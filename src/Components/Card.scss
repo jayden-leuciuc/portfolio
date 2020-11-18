@@ -1,7 +1,10 @@
 .card {
   margin: 0 5vw 1vh 5vw;
   width: 39vw;
-  font-size: 1.5rem;
+  .projectTitle {
+    padding-top: 0;
+    font-size: 2.33rem;
+  }
   .img {
     width: 100%;
     border: 3px solid white;

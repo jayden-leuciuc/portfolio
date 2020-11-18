@@ -10,14 +10,14 @@ function About() {
                 <div className="p-container">
                 <p>I'm a self taught developer located in Knoxville, Tennesee. 
                 I focus on front end web development, but I do backend as well.</p>
-                <p>Social: 
+                {/*<p>Social: 
                     <div className="social-icons-container">
                     <FaGithub className="social-icon"/>
                 <FaLinkedin className="social-icon"/>
-                <FaTwitter className="social-icon"/>
+                <FaTwitter className="social-icon"/> 
                     </div>
                 
-                </p>
+                </p> */}
                 <p>If you would like to contact me: <span><a href="mailto: leuciucjayden@gmail.com">leuciucjayden@gmail.com</a></span></p>
                 <p>Resume: <span><a href="/public/media/Leuciuc, Jayden Resume.pdf">Leuciuc, Jayden Resume 2020</a></span></p>
 

@@ -15,7 +15,7 @@ function Project({
     return (
         <div className="project-container">
             <div className="card">
-            <h1>{ projectTitle}</h1> 
+            <h1 className="projectTitle">{ projectTitle}</h1> 
             <a href={liveLink} target="_blank" rel="noreferrer"><img src={imgSrc} alt={imgAlt} className="img"/></a>
             <div className="buttonContainer">
                 <div className="gitHubButton">
