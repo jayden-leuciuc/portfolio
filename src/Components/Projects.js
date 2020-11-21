@@ -6,7 +6,7 @@ import './Projects.scss'
 function Projects() {
     return (
        <div className="projects-Header">
-           <h1>&lt;Projects/&gt;</h1>
+           <h1>&lt;Projects /&gt;</h1>
         <div className="projects-container">
             
             <Card {...projectOne}/>

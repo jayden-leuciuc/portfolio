@@ -1,11 +1,11 @@
 .about-container {
   height: 100%;
   width: 100%;
-  background-color: #fad0a7;
+  background-color: #222222;
   .text-container {
-    font-family: "Esteban", serif;
+    font-family: "Montserrat", serif;
     font-size: 2rem;
-    color: #ffffff;
+    color: #dbdbdb;
     height: 100%;
 
     h1 {
@@ -21,11 +21,11 @@
 
       a {
         text-decoration: none;
-        color: #ffffff;
+        color: #107e7d;
         font-weight: bold;
       }
       a:hover {
-        color: #107e7d;
+        color: #7dc5c5; //194242
         transition: 0.5s ease-in;
       }
     }
@@ -34,7 +34,7 @@
       font-size: 2rem;
     }
     .icons {
-      padding: 0 0 5rem 12.5rem;
+      padding: 10px 0 5rem 12.5rem;
       font-size: 3rem;
       .icon:hover {
         color: #107e7d;

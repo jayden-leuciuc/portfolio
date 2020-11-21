@@ -4,6 +4,7 @@ import { FaHtml5, FaCss3, FaNodeJs, FaSass, FaReact, FaGitAlt, FaTwitter, FaLink
 import {DiMongodb} from "react-icons/di"
 function About() {
     return (
+        <div id="aboutId">
         <div className="about-container">
             <div className="text-container">
                 <h1>About<span>_</span></h1>
@@ -19,7 +20,7 @@ function About() {
                 
                 </p> */}
                 <p>If you would like to contact me: <span><a href="mailto: leuciucjayden@gmail.com">leuciucjayden@gmail.com</a></span></p>
-                <p>Resume: <span><a href="/media/Leuciuc, Jayden Resume.pdf" download="Leuciuc, Jayden Resume">Leuciuc, Jayden Resume 2020</a></span></p>
+                <p>Resume: <span><a href="/media/Leuciuc, Jayden Resume.pdf" target="_blank">Leuciuc, Jayden Resume 2020</a></span></p>
 
                 
                 </div>
@@ -35,6 +36,7 @@ function About() {
             </div>
             </div>
             
+        </div>
         </div>
     )
 }

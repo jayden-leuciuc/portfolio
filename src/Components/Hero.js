@@ -7,7 +7,7 @@ import './About'
 function Hero() {
     const scrollToAbout = () => {
         document.querySelector('#aboutId').scrollIntoView({
-            behavior: "auto"
+            behavior: "smooth"
         })
     } 
 
@@ -19,9 +19,9 @@ function Hero() {
                 <p>Self-taught web developer</p>
             </div>  
             <div className="icon-container">
-                <button onClick = {scrollToAbout}>
-                <AiOutlineArrowDown className="iconArrow" />
-                </button>
+                
+                <AiOutlineArrowDown className="iconArrow" onClick = {scrollToAbout}/>
+                
                 
             </div>
         </div>

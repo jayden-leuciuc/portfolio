@@ -23,45 +23,44 @@
     font-size: 1rem;
 
     .gitHubButton {
-      background-color: #fc3836;
+      background-color: transparent;
       width: 50%;
       padding-top: 5px;
-      border: 2px solid grey;
-      border-radius: 5%;
+      border: 1px solid #222222;
 
       a {
         text-decoration: none;
+
         p {
-          color: #fff;
+          color: #222222;
         }
       }
     }
     .sourceButton {
-      background-color: #fc3836;
+      background-color: transparent;
       width: 50%;
       padding-top: 5px;
-      border: 2px solid grey;
-      border-radius: 5%;
+      border: 1px solid #222222;
       a {
         text-decoration: none;
         p {
-          color: #fff;
+          color: #222222;
         }
       }
     }
     .sourceButton:hover {
       transition: 0.5s ease-in;
-      background-color: #107e7d;
+      background-color: #222222;
       .sourceText {
-        color: #f9dbbd;
+        color: #dbdbdb;
         transition: 0.5s ease-in;
       }
     }
     .gitHubButton:hover {
       transition: 0.5s ease-in;
-      background-color: #107e7d;
+      background-color: #222222;
       .gitText {
-        color: #f9dbbd;
+        color: #dbdbdb;
         transition: 0.5s ease-in;
       }
     }
@@ -78,5 +77,9 @@
     width: 98vw;
     padding: 0 1vw 0 1vw;
     margin: 0;
+    .projectDescription {
+      font-size: 1.25rem;
+      padding-bottom: 15px;
+    }
   }
 }
