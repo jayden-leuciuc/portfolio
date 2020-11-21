@@ -1,7 +1,16 @@
 import React from 'react'
 import './Hero.scss'
 import {AiOutlineArrowDown} from 'react-icons/ai'
+import './About'
+
+
 function Hero() {
+    const scrollToAbout = () => {
+        document.querySelector('#aboutId').scrollIntoView({
+            behavior: "auto"
+        })
+    } 
+
     return (
         <div className="hero-container">
             <div className="text-container">
@@ -10,7 +19,10 @@ function Hero() {
                 <p>Self-taught web developer</p>
             </div>  
             <div className="icon-container">
-                <AiOutlineArrowDown className="iconArrow"/>
+                <button onClick = {scrollToAbout}>
+                <AiOutlineArrowDown className="iconArrow" />
+                </button>
+                
             </div>
         </div>
     )
