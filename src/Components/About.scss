@@ -36,9 +36,18 @@
     .icons {
       padding: 10px 0 5rem 12.5rem;
       font-size: 3rem;
-      .icon:hover {
+      display: flex;
+      .iconText {
+        visibility: hidden;
+        position: absolute;
+        font-size: 1.5rem;
+      }
+      .iconPic:hover {
         color: #107e7d;
         animation: scrollDown 1s ease-out infinite;
+      }
+      .iconPic:hover + .iconText {
+        visibility: visible;
       }
     }
   }

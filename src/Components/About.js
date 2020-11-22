@@ -9,8 +9,8 @@ function About() {
             <div className="text-container">
                 <h1>About<span>_</span></h1>
                 <div className="p-container">
-                <p>I'm a self taught developer located in Knoxville, Tennesee. 
-                I focus on front end web development, but I do backend as well.</p>
+                <p>I'm a self taught developer located in Knoxville, Tennesee, who focuses on front end web development.</p>
+                <p>I consider myself to be very self-motivated, as I am always learning, since learning is important in this industry.</p>
                 {/*<p>Social: 
                     <div className="social-icons-container">
                     <FaGithub className="social-icon"/>
@@ -26,13 +26,39 @@ function About() {
                 </div>
                 <h6>This is the technology I like to use:</h6>
                 <div class="icons">
-                <FaHtml5 className="icon"/>
-                <FaCss3 className="icon"/>
-                <FaNodeJs className="icon"/>
-                <FaSass className="icon"/>
-                <FaReact className="icon"/>
-                <DiMongodb className="icon"/>
-                <FaGitAlt className="icon"/>
+                    <div className="hmtlDiv">
+                        <FaHtml5 className="iconPic"/>
+                        <p className="iconText">Html5</p>
+                    </div>
+                    <div className="cssDiv">
+                        <FaCss3 className="iconPic"/>
+                        <p className="iconText">Css3</p>
+                    </div>
+                    <div className="nodeDiv">
+                        <FaNodeJs className="iconPic"/>
+                        <p className="iconText">Node.js</p>
+                    </div>
+                    <div className="sassDiv">
+                        <FaSass className="iconPic"/>
+                        <p className="iconText">Sass</p>
+                    </div>
+                    <div className="reactDiv">
+                        <FaReact className="iconPic"/>
+                        <p className="iconText">React.js</p>
+                    </div>
+                    <div className="mongoDiv">
+                        <DiMongodb className="iconPic"/>
+                        <p className="iconText">MongoDB</p>
+                    </div>
+                    <div className="gitDiv">
+                        <FaGitAlt className="iconPic"/>
+                        <p className="iconText">Git</p>
+                    </div>
+                
+                
+
+                
+                
             </div>
             </div>
             
