@@ -20,7 +20,7 @@ function About() {
                 
                 </p> */}
                 <p>If you would like to contact me: <span><a href="mailto: leuciucjayden@gmail.com">leuciucjayden@gmail.com</a></span></p>
-                <p>Resume: <span><a href="/media/Leuciuc, Jayden Resume.pdf" target="_blank">Leuciuc, Jayden Resume 2020</a></span></p>
+                <p>Resume: <span><a href="/media/Leuciuc,+Jayden+Resume.pdf" target="_blank">Leuciuc, Jayden Resume 2020</a></span></p>
 
                 
                 </div>
