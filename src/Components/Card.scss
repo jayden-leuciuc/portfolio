@@ -12,9 +12,9 @@
     object-fit: cover;
   }
   .img:hover {
-    opacity: 0.7;
     transition: 0.3s ease-in;
     cursor: pointer;
+    filter: blur(3px);
   }
   .buttonContainer {
     height: 2rem;
