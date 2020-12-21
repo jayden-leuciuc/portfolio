@@ -27,3 +27,13 @@ export const projectThree = {
   githubLink: 'https://github.com/jayden-leuciuc/covid-tracker',
   liveLink: 'https://covid-19-tracker-site.netlify.app/',
 };
+
+export const projectFour = {
+  projectTitle: 'Github User Lookup project',
+  projectDesc:
+    'This project demonstrates my ability to pull information from the GitHub api, along with autentication with Auth0.',
+  imgSrc: '/media/github-pages-sc.JPG',
+  imgAlt: 'Project image',
+  githubLink: 'https://github.com/jayden-leuciuc/github-pages',
+  liveLink: 'https://github-page.netlify.app/',
+};

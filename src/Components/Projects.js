@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from '../Components/Card';
-import { projectOne, projectTwo, projectThree } from './Data';
+import { projectOne, projectTwo, projectThree, projectFour } from './Data';
 import './Projects.scss';
 
 function Projects() {
@@ -8,6 +8,7 @@ function Projects() {
     <div className='projects-Header'>
       <h1>&lt;Projects /&gt;</h1>
       <div className='projects-container'>
+        <Card {...projectFour} />
         <Card {...projectThree} />
         <Card {...projectTwo} />
         <Card {...projectOne} />
