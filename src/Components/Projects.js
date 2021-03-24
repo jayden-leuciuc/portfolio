@@ -5,7 +5,7 @@ import './Projects.scss';
 
 function Projects() {
   return (
-    <div className='projects-Header'>
+    <div className='projects-Header' data-aos='fade-up'>
       <h1>&lt;Projects /&gt;</h1>
       <div className='projects-container'>
         <Card {...projectFour} />

@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   color: #ffffff;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   animation: bgColor 15s ease infinite;
 
   .text-container {
@@ -25,7 +25,7 @@
 
 .iconArrow {
   font-size: 3rem;
-  animation: scrollDown 2s ease-out infinite;
+  animation: scrollDown 1s infinite;
 }
 .iconArrow:hover {
   cursor: pointer;
@@ -34,7 +34,7 @@
   0% {
     transform: translateY(0);
   }
-  50% {
+  25% {
     transform: translateY(10px);
   }
   0% {

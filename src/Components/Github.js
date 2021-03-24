@@ -3,7 +3,7 @@ import './Github.scss';
 
 function Github() {
   return (
-    <div className='githubDiv'>
+    <div className='githubDiv' data-aos='fade-up'>
       <h1>Github Calendar:</h1>
       <img
         className='gitHubImg'

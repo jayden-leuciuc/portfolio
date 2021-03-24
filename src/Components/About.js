@@ -13,23 +13,31 @@ import {
 } from 'react-icons/fa';
 import { DiMongodb } from 'react-icons/di';
 import { GrGraphQl } from 'react-icons/gr';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 function About() {
+  AOS.init();
   return (
     <div id='aboutId'>
-      <div className='about-container'>
+      <div className='about-container' data-aos='fade-up'>
         <div className='text-container'>
-          <h1>
+          <h1 data-aos='fade-right'>
             About<span>_</span>
           </h1>
           <div className='p-container'>
             <p>
-              I'm a self taught developer located in Knoxville, Tennesee, who
-              focuses on front end web development.
+              I'm a self taught developer located in Knoxville, Tennessee. I
+              focus on front end web development, but I am comfortable with full
+              stack applications.
             </p>
+            <br />
             <p>
-              I consider myself to be very self-motivated, as I am always
-              learning, since learning is important in this industry.
+              Contributing to open source and creating video content on YouTube
+              are things that I love to do when I am not working on my side
+              projects.
             </p>
+            <br />
             {/*<p>Social: 
                     <div className="social-icons-container">
                     <FaGithub className="social-icon"/>
@@ -49,8 +57,12 @@ function About() {
             <p>
               Resume:{' '}
               <span>
-                <a href='/media/Leuciuc,+Jayden+Resume.pdf' target='_blank'>
-                  Leuciuc, Jayden Resume 2020
+                <a
+                  href='/media/resume.pdf'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  Leuciuc, Jayden Resume 2021
                 </a>
               </span>
             </p>
