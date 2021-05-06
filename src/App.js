@@ -1,15 +1,15 @@
 import './app.scss';
-import About from './Components/About';
-import Hero from './Components/Hero';
-import Projects from './Components/Projects';
-import Github from './Components/Github';
+import About from './Components/About/About.js';
+import Hero from './Components/Hero/Hero.js';
+import Projects from './Components/Projects/Projects.js';
+import WorkingProjects from './Components/WorkingProjects/WorkingProjects';
 
 function App() {
   return (
     <>
       <Hero />
       <About />
-      <Github />
+      <WorkingProjects />
       <Projects />
     </>
   );

@@ -1,0 +1,96 @@
+.card {
+  margin: 0 5vw 1vh 5vw;
+  width: 39vw;
+  .projectTitle {
+    padding-top: 3rem;
+    font-size: 2.33rem;
+  }
+  .img-container {
+    &:hover {
+      .buttonContainer {
+        visibility: visible;
+      }
+      .img {
+        filter: blur(3px);
+      }
+    }
+    .img {
+      width: 100%;
+      border: 2px solid #dbdbdb;
+      height: 22rem;
+      object-fit: cover;
+      position: relative;
+    }
+    .buttonContainer {
+      position: absolute;
+      visibility: hidden;
+      top: 0;
+      height: 22rem;
+      width: 100%;
+      display: flex;
+      text-align: center;
+      font-size: 1rem;
+      .text-container {
+        width: 100%;
+        position: absolute;
+        font-size: 2rem;
+        .codeText {
+          width: 50%;
+          float: left;
+          padding-top: 15%;
+        }
+        .viewText {
+          @extend .codeText;
+          float: right;
+        }
+      }
+
+      .gitHubButton {
+        background-color: #dbdbdb;
+        width: 50%;
+        padding-top: 5px;
+        text-decoration: none;
+        opacity: 0;
+        &:hover {
+          opacity: 0.3;
+        }
+      }
+      .sourceButton {
+        @extend .gitHubButton;
+      }
+      /*.sourceButton:hover {
+        transition: 0.5s ease-in;
+        background-color: #222222;
+        .sourceText {
+          color: #dbdbdb;
+          transition: 0.5s ease-in;
+        }
+      }
+      .gitHubButton:hover {
+        transition: 0.5s ease-in;
+        background-color: #222222;
+        .gitText {
+          color: #dbdbdb;
+          transition: 0.5s ease-in;
+        }
+      } */
+    }
+  }
+  .projectDescription {
+    color: #dbdbdb;
+    padding-left: 0.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .card {
+    width: 98vw;
+    padding: 0 1vw 0 1vw;
+    margin: 0;
+    .projectDescription {
+      font-size: 1.25rem;
+      padding-bottom: 15px;
+    }
+  }
+}

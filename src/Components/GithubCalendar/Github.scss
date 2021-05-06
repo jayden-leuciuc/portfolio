@@ -1,0 +1,29 @@
+.githubDiv {
+  height: 100%;
+  h1 {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 55px;
+    padding: 2rem 0 0 2rem;
+  }
+
+  .gitHubImg {
+    width: 100%;
+    padding: 30px 75px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .githubDiv {
+    h1 {
+      font-size: 25px;
+    }
+
+    .gitHubImg {
+      width: 100%;
+      padding: 15px 10px;
+      height: auto;
+    }
+  }
+}
