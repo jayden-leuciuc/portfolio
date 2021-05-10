@@ -1,5 +1,4 @@
 @mixin carousel-button {
-  height: 2rem;
   top: 50%;
   border: none;
   background: none;
@@ -13,15 +12,18 @@
 
 .current-project-container {
   font-family: 'Montserrat', serif;
+  height: 100%;
   width: 100%;
-  height: 24rem;
-
   background-color: #fcebda;
+
   .left-container {
     width: 40%;
-    float: left;
+    justify-content: center;
     text-align: center;
-    top: 25%;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 2rem 0 2rem;
     h1 {
       font-size: 2.5rem;
     }
@@ -30,13 +32,9 @@
     }
   }
   .right-container {
-    padding: 0 10rem;
-    height: 100%;
     width: 60%;
-    float: right;
     display: flex;
-    justify-content: center;
-
+    padding: 0 10vw 2vh 10vw;
     .left-arrow {
       float: left;
       @include carousel-button();
@@ -55,7 +53,7 @@
         padding-top: 3rem;
         height: 100%;
         .info-img {
-          height: 14rem;
+          height: 15vw;
           width: auto;
         }
         .info-title {
@@ -66,6 +64,110 @@
           width: 100%;
           font-size: 1rem;
           padding: 0 3.5rem 0 3.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .current-project-container {
+    .left-container {
+      width: 100%;
+      justify-content: center;
+      padding: 2rem 12rem 0 12rem;
+      .left-container-title {
+        font-size: 2.5rem;
+      }
+      .left-container-subtitle {
+        font-size: 1.5rem;
+      }
+    }
+    .right-container {
+      width: 100%;
+      padding: 0rem 8.7rem 5rem 8.7rem;
+      .active {
+        .info-container {
+          .info-img {
+            height: 14rem;
+            width: auto;
+          }
+          .info-title {
+            font-size: 2rem;
+            padding-top: 1rem;
+          }
+          .info-subtitle {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .current-project-container {
+    height: 100%;
+    .left-container {
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+      padding: 1rem 10vw;
+      .left-container-title {
+        font-size: 2.2rem;
+      }
+      .left-container-subtitle {
+        font-size: 1rem;
+      }
+    }
+    .right-container {
+      width: 100%;
+      padding: 0rem 2rem 5rem 2rem;
+      .active {
+        .info-container {
+          .info-img {
+            height: 10rem;
+            width: auto;
+          }
+          .info-title {
+            font-size: 2rem;
+          }
+          .info-subtitle {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .current-project-container {
+    .left-container {
+      padding: 1rem 5rem;
+    }
+    .right-container {
+      width: 100%;
+      padding: 0rem 1rem 2.5rem 1rem;
+      .left-arrow {
+        font-size: 25px;
+      }
+      .right-arrow {
+        font-size: 25px;
+      }
+      .active {
+        .info-container {
+          font-size: 1rem;
+          .info-img {
+            height: 7rem;
+            width: auto;
+          }
+          .info-title {
+            font-size: 1.5rem;
+          }
+          .info-subtitle {
+            font-size: 1rem;
+          }
         }
       }
     }

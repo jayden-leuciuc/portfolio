@@ -18,8 +18,8 @@ const WorkingProjects = () => {
   return (
     <div className='current-project-container' data-aos='fade-up'>
       <div className='left-container'>
-        <h1>What i'm currently working on:</h1>
-        <p>Inclues current projects</p>
+        <h1 className='left-container-title'>What i'm currently working on:</h1>
+        <p className='left-container-subtitle'>Inclues current projects</p>
       </div>
       <div className='right-container'>
         <button className='left-arrow' onClick={prevSlide}>

@@ -12,7 +12,7 @@ function Project({
   return (
     <div className='project-container' data-aos='zoom-in'>
       <div className='card'>
-        <h1 className='projectTitle'>{projectTitle}</h1>
+        <h1 className='project-title'>{projectTitle}</h1>
         <div className='img-container'>
           <img src={imgSrc} alt={imgAlt} className='img' />
           <div className='buttonContainer'>

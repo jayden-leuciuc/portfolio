@@ -17,8 +17,7 @@ const SliderData = [
     image: '/media/invest.jpeg',
     altText: 'Various investing apps',
     title: 'TradeHub',
-    subtitle:
-      'An investing-themed platform that combines information from different brokerages to condense it into digestible information',
+    subtitle: 'An investing-themed platform that condenses information.',
   },
 ];
 
