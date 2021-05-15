@@ -1,7 +1,7 @@
 .about-container {
   height: 100%;
   width: 100%;
-  background-color: #222222;
+  background-color: #000000;
   .text-container {
     padding: 0 10rem 0 10rem;
     font-family: 'Montserrat', serif;
@@ -13,6 +13,7 @@
     h1 {
       padding: 40px 0 0 0;
       font-family: 'Montserrat', sans-serif;
+      font-weight: bolder;
       span {
         animation: pulse 1s ease-out infinite;
       }
@@ -47,7 +48,7 @@
         font-size: 1.5rem;
       }
       .iconPic:hover {
-        color: #f9dbbd;
+        color: #fff7ef;
       }
       .iconPic:hover + .iconText {
         visibility: visible;

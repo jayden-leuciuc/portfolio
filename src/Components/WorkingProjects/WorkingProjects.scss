@@ -1,9 +1,9 @@
 @mixin carousel-button {
-  top: 50%;
   border: none;
   background: none;
-  font-size: 50px;
-  transition: color 0.35s ease-in-out;
+  font-size: 30px;
+  text-align: center;
+  margin: auto;
   &:hover {
     color: aliceblue;
     cursor: pointer;
@@ -14,57 +14,56 @@
   font-family: 'Montserrat', serif;
   height: 100%;
   width: 100%;
-  background-color: #fcebda;
+  background-color: #fff7ef;
+  display: flex;
+  padding: 0 15vw;
 
-  .left-container {
-    width: 40%;
-    justify-content: center;
-    text-align: center;
-    float: left;
+  .button-container {
     display: flex;
-    flex-wrap: wrap;
-    padding: 1rem 2rem 0 2rem;
-    h1 {
-      font-size: 2.5rem;
+    flex-direction: column;
+    position: absolute;
+    padding-top: 5vh;
+    .carousel-control {
+      padding: 10px 0;
+      font-size: 2rem;
+      font-weight: 800;
+      &:hover {
+        cursor: pointer;
+      }
+      &.active-element {
+        color: #107e7d;
+      }
+      &.inactive-element {
+        color: #7dc5c5;
+
+        &:hover {
+          color: #000;
+        }
+      }
     }
-    p {
-      font-size: 1.5rem;
+    .up-arrow {
+      @include carousel-button();
+    }
+    .down-arrow {
+      @include carousel-button();
     }
   }
-  .right-container {
-    width: 60%;
-    display: flex;
-    padding: 0 10vw 2vh 10vw;
-    .left-arrow {
-      float: left;
-      @include carousel-button();
-    }
-    .right-arrow {
-      float: right;
-      @include carousel-button();
-    }
-    .inactive {
-      position: absolute;
-    }
-    .active {
-      text-align: center;
-      width: 100%;
-      .info-container {
-        padding-top: 3rem;
-        height: 100%;
-        .info-img {
-          height: 15vw;
-          width: auto;
-        }
-        .info-title {
-          width: 100%;
-          font-size: 2.5rem;
-        }
-        .info-subtitle {
-          width: 100%;
-          font-size: 1rem;
-          padding: 0 3.5rem 0 3.5rem;
-        }
+
+  .inactive {
+    position: absolute;
+  }
+  .active {
+    margin-left: 20vw;
+    height: 24rem;
+    .info-container {
+      height: 100%;
+      padding: 8vh 0 0 10vw;
+
+      .info-title {
+        font-size: 2.5rem;
+      }
+      .info-subtitle {
+        font-size: 1rem;
       }
     }
   }
@@ -72,33 +71,24 @@
 
 @media screen and (max-width: 1100px) {
   .current-project-container {
-    .left-container {
-      width: 100%;
-      justify-content: center;
-      padding: 2rem 12rem 0 12rem;
-      .left-container-title {
-        font-size: 2.5rem;
-      }
-      .left-container-subtitle {
-        font-size: 1.5rem;
+    padding: 0 10vw;
+    .button-container {
+      top: 50%;
+      margin-top: -10rem;
+      .carousel-control {
+        padding: 5px 0;
+        font-size: 1.7rem;
+        font-weight: 800;
       }
     }
-    .right-container {
-      width: 100%;
-      padding: 0rem 8.7rem 5rem 8.7rem;
-      .active {
-        .info-container {
-          .info-img {
-            height: 14rem;
-            width: auto;
-          }
-          .info-title {
-            font-size: 2rem;
-            padding-top: 1rem;
-          }
-          .info-subtitle {
-            font-size: 1rem;
-          }
+    .active {
+      .info-container {
+        padding: 15vh 0 0 12vw;
+        .info-title {
+          font-size: 1.7rem;
+        }
+        .info-subtitle {
+          font-size: 1rem;
         }
       }
     }
@@ -107,67 +97,73 @@
 
 @media screen and (max-width: 768px) {
   .current-project-container {
-    height: 100%;
-    .left-container {
-      width: 100%;
-      text-align: center;
-      justify-content: center;
-      padding: 1rem 10vw;
-      .left-container-title {
-        font-size: 2.2rem;
+    padding: 0 10vw;
+    .button-container {
+      top: 50%;
+      margin-top: -10rem;
+      .carousel-control {
+        padding: 5px 0;
+        font-size: 1.3rem;
+        font-weight: 800;
       }
-      .left-container-subtitle {
-        font-size: 1rem;
+      .up-arrow {
+        font-size: 25px;
+      }
+      .down-arrow {
+        font-size: 25px;
       }
     }
-    .right-container {
-      width: 100%;
-      padding: 0rem 2rem 5rem 2rem;
-      .active {
-        .info-container {
-          .info-img {
-            height: 10rem;
-            width: auto;
-          }
-          .info-title {
-            font-size: 2rem;
-          }
-          .info-subtitle {
-            font-size: 1rem;
-          }
+    .active {
+      .info-container {
+        padding: 15vh 0 0 12vw;
+        .info-title {
+          font-size: 1.5rem;
+        }
+        .info-subtitle {
+          font-size: 1rem;
         }
       }
     }
   }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 585px) {
   .current-project-container {
-    .left-container {
-      padding: 1rem 5rem;
+    padding: 0 10vw;
+    height: 26rem;
+    display: flex;
+    flex-direction: column;
+    .button-container {
+      text-align: center;
+      position: relative;
+      margin-top: 0;
+      top: 0;
+      .carousel-control {
+        padding: 5px 0;
+        font-size: 1.3rem;
+        font-weight: 800;
+      }
+      .up-arrow {
+        font-size: 25px;
+        text-align: center;
+      }
+      .down-arrow {
+        font-size: 25px;
+      }
     }
-    .right-container {
+    .active {
       width: 100%;
-      padding: 0rem 1rem 2.5rem 1rem;
-      .left-arrow {
-        font-size: 25px;
-      }
-      .right-arrow {
-        font-size: 25px;
-      }
-      .active {
-        .info-container {
+      margin: 0;
+      padding: 10vh 0 0 0;
+      text-align: center;
+      .info-container {
+        margin: 0;
+        padding: 0;
+        .info-title {
+          font-size: 1.5rem;
+        }
+        .info-subtitle {
           font-size: 1rem;
-          .info-img {
-            height: 7rem;
-            width: auto;
-          }
-          .info-title {
-            font-size: 1.5rem;
-          }
-          .info-subtitle {
-            font-size: 1rem;
-          }
         }
       }
     }

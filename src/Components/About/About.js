@@ -20,7 +20,7 @@ function About() {
   AOS.init();
   return (
     <div id='aboutId'>
-      <div className='about-container' data-aos='fade-up'>
+      <div className='about-container'>
         <div className='text-container'>
           <h1 data-aos='fade-right'>
             About<span>_</span>
