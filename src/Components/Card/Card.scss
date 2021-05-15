@@ -58,22 +58,6 @@
       .sourceButton {
         @extend .gitHubButton;
       }
-      /*.sourceButton:hover {
-        transition: 0.5s ease-in;
-        background-color: #222222;
-        .sourceText {
-          color: #dbdbdb;
-          transition: 0.5s ease-in;
-        }
-      }
-      .gitHubButton:hover {
-        transition: 0.5s ease-in;
-        background-color: #222222;
-        .gitText {
-          color: #dbdbdb;
-          transition: 0.5s ease-in;
-        }
-      } */
     }
   }
   .projectDescription {
