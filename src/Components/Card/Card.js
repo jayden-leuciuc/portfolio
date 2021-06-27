@@ -1,46 +1,18 @@
 import React from 'react';
 import './Card.scss';
 
-function Project({
-  projectTitle,
-  projectDesc,
-  imgSrc,
-  imgAlt,
-  githubLink,
-  liveLink,
-}) {
+function Card({ dataSrc }) {
+  const { projectTitle, imgSrc, imgAlt } = dataSrc;
   return (
-    <div className='project-container' data-aos='zoom-in'>
-      <div className='card'>
-        <h1 className='project-title'>{projectTitle}</h1>
-        <div className='img-container'>
-          <img src={imgSrc} alt={imgAlt} className='img' />
-          <div className='buttonContainer'>
-            <div className='text-container'>
-              <p className='codeText'>Github Code</p>
-              <p className='viewText'>View Project</p>
-            </div>
-
-            <a
-              class='gitHubButton'
-              href={githubLink}
-              target='_blank'
-              rel='noreferrer'
-            ></a>
-
-            <a
-              class='sourceButton'
-              href={liveLink}
-              target='_blank'
-              rel='noreferrer'
-            ></a>
-          </div>
+    <div className='project'>
+      <div className='project-overlay'>
+        <div className='overlay-text'>
+          <h1 className='overlay-header'>{projectTitle}</h1>
         </div>
-
-        <p className='projectDescription'>{projectDesc}</p>
       </div>
+      <img className='project-img' src={imgSrc} alt={imgAlt} />
     </div>
   );
 }
 
-export default Project;
+export default Card;

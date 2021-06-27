@@ -1,98 +1,34 @@
-.card {
-  margin: 0 5vw 1vh 5vw;
-  width: 39vw;
-  .project-title {
-    padding-top: 3rem;
-    font-size: 2.33rem;
+.project {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 50vw;
+  .project-img {
+    width: 100%;
+    height: auto;
   }
-  .img-container {
-    &:hover {
-      .buttonContainer {
-        visibility: visible;
-      }
-      .img {
-        filter: blur(3px);
-      }
+  .project-overlay {
+    opacity: 0;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transition: opacity 0.5s, padding 0.5s;
+  }
+  .overlay-text {
+    .overlay-header {
+      padding-top: 200px;
+      color: white;
+      transition: padding 0.5s;
     }
-    .img {
-      width: 100%;
-      border: 2px solid #dbdbdb;
-      height: 22rem;
-      object-fit: cover;
-      position: relative;
-    }
-    .buttonContainer {
+  }
+  &:hover {
+    .project-overlay {
       position: absolute;
-      visibility: hidden;
-      top: 0;
-      height: 22rem;
-      width: 100%;
-      display: flex;
-      text-align: center;
-      font-size: 1rem;
-      .text-container {
-        width: 100%;
-        position: absolute;
-        font-size: 2rem;
-        .codeText {
-          width: 50%;
-          float: left;
-          padding-top: 15%;
-        }
-        .viewText {
-          @extend .codeText;
-          float: right;
-        }
-      }
-
-      .gitHubButton {
-        background-color: #dbdbdb;
-        width: 50%;
-        padding-top: 5px;
-        text-decoration: none;
-        opacity: 0;
-        &:hover {
-          opacity: 0.3;
-        }
-      }
-      .sourceButton {
-        @extend .gitHubButton;
-      }
+      opacity: 0.8;
+      cursor: pointer;
     }
-  }
-  .projectDescription {
-    color: #dbdbdb;
-    padding-left: 0.5rem;
-    font-size: 1.5rem;
-  }
-}
-
-@media screen and (max-width: 980px) {
-  .card {
-    width: 98vw;
-    padding: 0 1vw 0 1vw;
-    margin: 0;
-    .projectDescription {
-      font-size: 1.25rem;
-      padding-bottom: 15px;
-    }
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .project-container {
-    .card {
-      .project-title {
-        font-size: 1.5rem;
-      }
-      .img-container {
-        .buttonContainer {
-          .text-container {
-            font-size: 1rem;
-            padding-top: 33%;
-          }
-        }
-      }
+    .overlay-header {
+      padding-top: 160px;
     }
   }
 }

@@ -27,9 +27,8 @@ function About() {
           </h1>
           <div className='p-container'>
             <p>
-              I'm a self taught developer located in Knoxville, Tennessee. I
-              focus on front end web development, but I am comfortable with full
-              stack applications.
+              I'm a self taught developer located in Tennessee. I have a passion
+              for front end development.
             </p>
             <br />
             <p>

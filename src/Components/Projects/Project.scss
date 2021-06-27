@@ -1,0 +1,24 @@
+.projects-container {
+  background-color: #fdf5ec;
+  max-width: 100%;
+  .projects-header {
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+    padding: 15px 0;
+  }
+  .image-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    .project {
+      text-align: center;
+      width: auto;
+      padding: 3px;
+
+      .project-img {
+        height: auto;
+      }
+    }
+  }
+}
