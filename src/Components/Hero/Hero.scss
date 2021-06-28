@@ -1,24 +1,25 @@
 .hero-container {
-  background-color: #fc3836;
+  background-color: #000;
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #ffffff;
   font-family: 'Montserrat', sans-serif;
-  animation: bgColor 15s ease infinite;
 
   .text-container {
     margin-top: 30vh;
     .hero-intro {
       font-size: 4rem;
+      color: #f8d6b4;
     }
     .hero-name {
       font-size: 4.5rem;
+      animation: nameColor 15s ease infinite;
     }
     .hero-description {
       font-size: 2rem;
+      color: #f8d6b4;
     }
   }
 }
@@ -26,6 +27,7 @@
 .iconArrow {
   font-size: 3rem;
   animation: scrollDown 1s infinite;
+  color: #f8d6b4;
 }
 .iconArrow:hover {
   cursor: pointer;
@@ -41,21 +43,21 @@
     transform: translateY(0);
   }
 }
-@keyframes bgColor {
+@keyframes nameColor {
   0% {
-    background-color: #fc3836;
+    color: #fc3836;
   }
   25% {
-    background-color: #cc3735;
+    color: #cc3735;
   }
   50% {
-    background-color: #c21f13;
+    color: #c21f13;
   }
   75% {
-    background-color: #cc3735;
+    color: #cc3735;
   }
   100% {
-    background-color: #fc3836;
+    color: #fc3836;
   }
 }
 
