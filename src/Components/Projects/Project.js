@@ -9,10 +9,18 @@ const Projects = () => {
     <div className='projects-container'>
       <h1 className='projects-header'>My Work</h1>
       <div className='image-container'>
-        <Card dataSrc={projectArray[0]} />
-        <Card dataSrc={projectArray[1]} />
-        <Card dataSrc={projectArray[2]} />
-        <Card dataSrc={projectArray[3]} />
+        <a href={projectArray[0].liveLink}>
+          <Card dataSrc={projectArray[0]} />
+        </a>
+        <a href={projectArray[1].liveLink}>
+          <Card dataSrc={projectArray[1]} />
+        </a>
+        <a href={projectArray[2].liveLink}>
+          <Card dataSrc={projectArray[2]} />
+        </a>
+        <a href={projectArray[3].liveLink}>
+          <Card dataSrc={projectArray[3]} />
+        </a>
       </div>
     </div>
   );

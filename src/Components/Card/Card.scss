@@ -1,9 +1,8 @@
 .project {
-  background-color: rgba(255, 255, 255, 0.8);
-  width: 50vw;
+  min-height: max-content;
   .project-img {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
   .project-overlay {
     opacity: 0;
@@ -16,7 +15,7 @@
   }
   .overlay-text {
     .overlay-header {
-      padding-top: 200px;
+      text-align: center;
       color: white;
       transition: padding 0.5s;
     }
@@ -28,7 +27,7 @@
       cursor: pointer;
     }
     .overlay-header {
-      padding-top: 160px;
+      padding-top: 120px;
     }
   }
 }
