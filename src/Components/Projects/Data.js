@@ -1,5 +1,6 @@
 export const projectArray = [
   {
+    projectType: 'react',
     projectTitle: 'Password Manager Project',
     projectDesc:
       'This project is a demonstration of my abilities in routes and rendering different components in react.',
@@ -10,6 +11,7 @@ export const projectArray = [
   },
 
   {
+    projectType: 'react',
     projectTitle: 'Construction Landing Project',
     projectDesc:
       'This is my first react project and it showcases my use of components.',
@@ -20,6 +22,7 @@ export const projectArray = [
   },
 
   {
+    projectType: 'react',
     projectTitle: 'Covid 19 Tracker Project',
     projectDesc:
       'This project demonstrates my ability to pull information from an api and display it.',
@@ -30,6 +33,7 @@ export const projectArray = [
   },
 
   {
+    projectType: 'react',
     projectTitle: 'Github User Lookup project',
     projectDesc:
       'This project demonstrates my ability to pull information from the GitHub api, along with autentication with Auth0.',

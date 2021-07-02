@@ -8,6 +8,23 @@
     padding: 15px 0;
     color: #eee5e5;
   }
+  .button-container {
+    text-align: center;
+    padding-bottom: 15px;
+    button {
+      padding: 2px 5px;
+      background-color: #000;
+      border: 1px solid #fff;
+      border-radius: 4px;
+      color: #fff;
+      margin: 0 4px;
+      &:hover {
+        background-color: #fff;
+        color: #000;
+        cursor: pointer;
+      }
+    }
+  }
   .image-container {
     width: 100%;
     display: flex;
