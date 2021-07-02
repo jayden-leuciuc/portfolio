@@ -1,5 +1,6 @@
 export const projectArray = [
   {
+    id: '0',
     projectType: 'react',
     projectTitle: 'Password Manager Project',
     projectDesc:
@@ -11,6 +12,7 @@ export const projectArray = [
   },
 
   {
+    id: '1',
     projectType: 'react',
     projectTitle: 'Construction Landing Project',
     projectDesc:
@@ -22,6 +24,7 @@ export const projectArray = [
   },
 
   {
+    id: '2',
     projectType: 'react',
     projectTitle: 'Covid 19 Tracker Project',
     projectDesc:
@@ -33,6 +36,7 @@ export const projectArray = [
   },
 
   {
+    id: '3',
     projectType: 'react',
     projectTitle: 'Github User Lookup project',
     projectDesc:
