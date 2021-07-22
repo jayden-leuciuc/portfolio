@@ -27,8 +27,10 @@ function About() {
           </h1>
           <div className='p-container'>
             <p>
-              I'm a self taught developer located in Tennessee. I have a passion
-              for front end development.
+              My name is Jayden Leuciuc, and I am a web devleoper that is
+              located in Knoxville, Tennesee. I love creating websites and
+              emails that catch the eye. I actively learn about new standards
+              and more efficient ways to write code.
             </p>
             <br />
             <p>
@@ -37,14 +39,6 @@ function About() {
               projects.
             </p>
             <br />
-            {/*<p>Social: 
-                    <div className="social-icons-container">
-                    <FaGithub className="social-icon"/>
-                <FaLinkedin className="social-icon"/>
-                <FaTwitter className="social-icon"/> 
-                    </div>
-                
-                </p> */}
             <p>
               If you would like to contact me:{' '}
               <span>
@@ -66,7 +60,7 @@ function About() {
               </span>
             </p>
           </div>
-          <h6>Technology I like to use:</h6>
+          <h6>Technologies I use:</h6>
           <div className='icons'>
             <div className='hmtlDiv'>
               <FaHtml5 className='iconPic' />
