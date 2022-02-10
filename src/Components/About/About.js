@@ -27,17 +27,14 @@ function About() {
           </h1>
           <div className='p-container'>
             <p>
-              My name is Jayden Leuciuc, and I am a web devleoper that is
-              located in Knoxville, Tennesee. I love creating websites and
-              emails that catch the eye. I actively learn about new standards
-              and more efficient ways to write code.
+              My name is Jayden and I am currently a computer science student at
+              the University of Tennessee. However, I started learning by
+              building custom projects on my own. My creative outlet is
+              developing clean, responsive websites. I mainly focus on front-end
+              web development, but I am comfortable with the backend
             </p>
             <br />
-            <p>
-              Contributing to open source and creating video content on YouTube
-              are things that I love to do when I am not working on my side
-              projects.
-            </p>
+            <p></p>
             <br />
             <p>
               If you would like to contact me:{' '}
@@ -51,11 +48,11 @@ function About() {
               Resume:{' '}
               <span>
                 <a
-                  href='/media/resume.pdf'
+                  href='\media\Leuciuc Jayden Resume.pdf'
                   target='_blank'
                   rel='noopener noreferrer'
                 >
-                  Leuciuc, Jayden Resume 2021
+                  Leuciuc, Jayden Resume 2022
                 </a>
               </span>
             </p>

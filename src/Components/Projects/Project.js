@@ -18,13 +18,13 @@ const Projects = () => {
   return (
     <div className='projects-container'>
       <h1 className='projects-header'>My Work</h1>
-      <div className='button-container'>
+      {/* <div className='button-container'>
         <button onClick={() => setProjectArr(projectArray)}>All</button>
         <button onClick={() => filterProjects('react')}>React</button>
         <button>Wordpress</button>
-        <button>Email</button>
+  <button>Email</button> 
       </div>
-
+*/}
       <div className='image-container'>
         {projectArr.map((project, index) => {
           return (
