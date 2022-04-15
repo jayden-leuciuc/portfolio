@@ -1,0 +1,171 @@
+@mixin carousel-button {
+  border: none;
+  background: none;
+  font-size: 30px;
+  text-align: center;
+  margin: auto;
+  &:hover {
+    color: aliceblue;
+    cursor: pointer;
+  }
+}
+
+.current-project-container {
+  font-family: 'Montserrat', serif;
+  height: 100%;
+  width: 100%;
+  background-color: #fff7ef;
+  display: flex;
+  padding: 0 15vw;
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding-top: 5vh;
+    .carousel-control {
+      padding: 10px 0;
+      font-size: 2rem;
+      font-weight: 800;
+      &:hover {
+        cursor: pointer;
+      }
+      &.active-element {
+        color: #107e7d;
+      }
+      &.inactive-element {
+        color: #7dc5c5;
+
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+    .up-arrow {
+      @include carousel-button();
+    }
+    .down-arrow {
+      @include carousel-button();
+    }
+  }
+
+  .inactive {
+    position: absolute;
+  }
+  .active {
+    margin-left: 20vw;
+    height: 24rem;
+    .info-container {
+      height: 100%;
+      padding: 8vh 0 0 10vw;
+
+      .info-title {
+        font-size: 3rem;
+      }
+      .info-subtitle {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .current-project-container {
+    padding: 0 10vw;
+    .button-container {
+      top: 50%;
+      margin-top: -10rem;
+      .carousel-control {
+        padding: 5px 0;
+        font-size: 1.7rem;
+        font-weight: 800;
+      }
+    }
+    .active {
+      .info-container {
+        padding: 15vh 0 0 12vw;
+        .info-title {
+          font-size: 1.7rem;
+        }
+        .info-subtitle {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .current-project-container {
+    padding: 0 10vw;
+    .button-container {
+      top: 50%;
+      margin-top: -10rem;
+      .carousel-control {
+        padding: 5px 0;
+        font-size: 1.3rem;
+        font-weight: 800;
+      }
+      .up-arrow {
+        font-size: 25px;
+      }
+      .down-arrow {
+        font-size: 25px;
+      }
+    }
+    .active {
+      .info-container {
+        padding: 15vh 0 0 12vw;
+        .info-title {
+          font-size: 1.5rem;
+        }
+        .info-subtitle {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .current-project-container {
+    padding: 0 10vw;
+    height: 26rem;
+    display: flex;
+    flex-direction: column;
+    .button-container {
+      text-align: center;
+      position: relative;
+      margin-top: 0;
+      top: 0;
+      .carousel-control {
+        padding: 5px 0;
+        font-size: 1.3rem;
+        font-weight: 800;
+      }
+      .up-arrow {
+        font-size: 25px;
+        text-align: center;
+      }
+      .down-arrow {
+        font-size: 25px;
+      }
+    }
+    .active {
+      width: 100%;
+      margin: 0;
+      padding: 10vh 0 0 0;
+      text-align: center;
+      .info-container {
+        margin: 0;
+        padding: 0;
+        .info-title {
+          font-size: 1.5rem;
+        }
+        .info-subtitle {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

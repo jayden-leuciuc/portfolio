@@ -1,0 +1,126 @@
+.about-container {
+  height: 100%;
+  width: 100%;
+  background-color: #f3f1f1;
+  font-weight: 600;
+  .text-container {
+    padding: 0 10rem 0 10rem;
+    font-family: 'Montserrat', serif;
+    font-size: 2rem;
+    color: #000;
+    height: 100%;
+    text-align: center;
+
+    h1 {
+      padding: 40px 0 0 0;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bolder;
+      span {
+        animation: pulse 1s ease-out infinite;
+      }
+    }
+    .p-container {
+      padding: 20px 8vw 0;
+      line-height: 1.5;
+
+      a {
+        text-decoration: none;
+        color: #107e7d;
+        font-weight: bold;
+      }
+      a:hover {
+        color: #7dc5c5; //194242
+        transition: 0.5s ease-in;
+      }
+    }
+    h6 {
+      padding-top: 5rem;
+      font-size: 2rem;
+    }
+    .icons {
+      padding: 10px 27vw 5rem 27vw;
+      font-size: 3rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .iconText {
+        visibility: hidden;
+        position: absolute;
+        font-size: 1.5rem;
+      }
+      .iconPic:hover {
+        color: #107e7d;
+      }
+      .iconPic:hover + .iconText {
+        visibility: visible;
+      }
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 1545px) {
+  .about-container {
+    padding-bottom: 10px;
+    .text-container {
+      .icons {
+        padding: 1rem 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-container {
+    h1 {
+      font-size: 2.5rem;
+    }
+    .text-container {
+      padding: 0 10px;
+      .p-container {
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0 20px 20px 20px;
+      }
+      h6 {
+        font-size: 1.5rem;
+        padding: 0;
+      }
+      .icons {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .about-container {
+    h1 {
+      font-size: 2rem;
+    }
+    .text-container {
+      padding: 0 10px;
+      .p-container {
+        font-size: 1rem;
+        margin: 0;
+        padding: 0 20px 20px 20px;
+      }
+      h6 {
+        font-size: 1rem;
+        padding: 0;
+      }
+      .icons {
+        font-size: 1rem;
+      }
+    }
+  }
+}
