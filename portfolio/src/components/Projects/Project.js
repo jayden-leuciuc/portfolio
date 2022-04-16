@@ -28,7 +28,39 @@ const Projects = () => {
       </div>
 */}
       <div className="image-container">
-        <a>
+        <a href={projectArr[2].liveLink}>
+          <div className="project">
+            <div className="project-overlay">
+              <div className="overlay-text">
+                <h1 className="overlay-header">{projectArr[2].projectTitle}</h1>
+                <p>{projectArr[2].projectType}</p>
+              </div>
+            </div>
+            <StaticImage
+              src={"../../images/covid19sc.JPG"}
+              alt={projectArr[2].imgAlt}
+              className="project-img"
+              placeholder="none"
+            />
+          </div>
+        </a>
+        <a href={projectArr[3].liveLink}>
+          <div className="project">
+            <div className="project-overlay">
+              <div className="overlay-text">
+                <h1 className="overlay-header">{projectArr[3].projectTitle}</h1>
+                <p>{projectArr[3].projectType}</p>
+              </div>
+            </div>
+            <StaticImage
+              src={"../../images/github-pages-sc.JPG"}
+              alt={projectArr[3].imgAlt}
+              className="project-img"
+              placeholder="none"
+            />
+          </div>
+        </a>
+        <a href={projectArr[0].liveLink}>
           <div className="project">
             <div className="project-overlay">
               <div className="overlay-text">
@@ -37,7 +69,7 @@ const Projects = () => {
               </div>
             </div>
             <StaticImage
-              src={"../../images/coding.jpeg"}
+              src={"../../images/password-project-sc.png"}
               alt={projectArr[0].imgAlt}
               className="project-img"
               placeholder="none"
@@ -45,7 +77,7 @@ const Projects = () => {
           </div>
         </a>
 
-        <a>
+        <a href={projectArr[1].liveLink}>
           <div className="project">
             <div className="project-overlay">
               <div className="overlay-text">
@@ -54,7 +86,7 @@ const Projects = () => {
               </div>
             </div>
             <StaticImage
-              src={"../../images/invest.jpeg"}
+              src={"../../images/cnstrct-sc.png"}
               alt={projectArr[1].imgAlt}
               className="project-img"
               placeholder="none"
