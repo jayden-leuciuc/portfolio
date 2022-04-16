@@ -7,23 +7,18 @@ import {
   FaSass,
   FaReact,
   FaGitAlt,
-  FaTwitter,
-  FaLinkedin,
-  FaGithub,
 } from "react-icons/fa"
 import { DiMongodb } from "react-icons/di"
 import { GrGraphQl } from "react-icons/gr"
-import AOS from "aos"
-import "aos/dist/aos.css"
-import resume from "../../downloads/Leuciuc Jayden Resume.pdf"
+
+import resume from "../downloads/Leuciuc Jayden Resume.pdf"
 
 function About() {
-  AOS.init()
   return (
     <div id="aboutId">
       <div className="about-container">
         <div className="text-container">
-          <h1 data-aos="fade-right">
+          <h1>
             About<span>_</span>
           </h1>
           <div className="p-container">

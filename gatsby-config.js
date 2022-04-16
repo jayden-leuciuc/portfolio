@@ -11,6 +11,7 @@ module.exports = {
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
+
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
@@ -32,18 +33,6 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: `gatsby-plugin-google-fonts-v2`,
-      options: {
-        fonts: [
-          {
-            family: "Montserrat sans-serif",
-            weights: ["200", "300"],
-          },
-        ],
-      },
-    },
-
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

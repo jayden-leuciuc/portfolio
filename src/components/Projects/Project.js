@@ -1,21 +1,18 @@
 import React, { useState } from "react"
-import Card from "../Card/Card"
 import { projectArray } from "./Data"
 import "./Project.scss"
 import { StaticImage } from "gatsby-plugin-image"
 
 const Projects = () => {
-  const [projectArr, setProjectArr] = useState(projectArray)
+  const [projectArr] = useState(projectArray)
 
-  {
-    /*const filterProjects = matchType => {
+  /*const filterProjects = matchType => {
     console.log(projectArr)
     const filteredArray = projectArray.filter(
       project => project.projectType === matchType
     )
     setProjectArr(filteredArray)
   } */
-  }
 
   return (
     <div className="projects-container">
