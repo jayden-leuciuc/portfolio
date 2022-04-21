@@ -5,20 +5,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 
   .text-container {
     margin-top: 30vh;
     .hero-intro {
-      font-size: 4rem;
+      font-size: clamp(1rem, 3vw, 4rem);
       color: #eee5e5;
+      margin: 0;
     }
     .hero-name {
-      font-size: 4.5rem;
-      animation: nameColor 15s ease infinite;
+      font-size: clamp(1.5rem, 7vw, 10rem) !important;
+      animation: nameColor 5s ease infinite;
+      padding: 0 0 2vw 0;
+      margin: 0;
     }
     .hero-description {
-      font-size: 2rem;
+      font-size: clamp(1rem, 3vw, 4rem);
       color: #eee5e5;
     }
   }
@@ -43,6 +46,7 @@
     transform: translateY(0);
   }
 }
+
 @keyframes nameColor {
   0% {
     color: #fc3836;
@@ -58,25 +62,5 @@
   }
   100% {
     color: #fc3836;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .hero-container {
-    .text-container {
-      margin-top: 30vh;
-      .hero-intro {
-        font-size: 2.75rem;
-      }
-      .hero-name {
-        font-size: 2.5rem;
-      }
-      .hero-description {
-        font-size: 1.33rem;
-      }
-    }
-  }
-  .iconArrow {
-    font-size: 1.5rem;
   }
 }

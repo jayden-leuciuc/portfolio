@@ -2,22 +2,21 @@
   background-color: #000;
   max-width: 100%;
   .projects-header {
-    font-size: 3rem;
+    font-size: clamp(1rem, 3vw, 4rem);
     font-weight: bolder;
     text-align: center;
-    padding: 15px 0;
     color: #eee5e5;
+    margin: 0;
+    padding: clamp(1.2vw, 4vw, 0.8vw) 0;
   }
   .button-container {
     text-align: center;
-    padding-bottom: 15px;
     button {
       padding: 2px 5px;
       background-color: #000;
       border: 1px solid #fff;
       border-radius: 4px;
       color: #fff;
-      margin: 0 4px;
       font-size: 16px;
       min-width: 110px;
       &:hover {
@@ -75,16 +74,12 @@
           }
         }
       }
-      
     }
   }
 }
 
 @media screen and (max-width: 768px) {
   .projects-container {
-    .projects-header {
-      font-size: 2rem;
-    }
     .image-container {
       a {
         display: flex;

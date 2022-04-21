@@ -63,13 +63,17 @@ function About() {
               <FaNodeJs className="iconPic" />
               <p className="iconText">Node.js</p>
             </div>
-            <div className="sassDiv">
-              <FaSass className="iconPic" />
-              <p className="iconText">Sass</p>
-            </div>
             <div className="reactDiv">
               <FaReact className="iconPic" />
               <p className="iconText">React.js</p>
+            </div>
+            <div className="GatsbyDiv">
+              <FaReact className="iconPic" />
+              <p className="iconText">Gatsby.js</p>
+            </div>
+            <div className="sassDiv">
+              <FaSass className="iconPic" />
+              <p className="iconText">Sass</p>
             </div>
             <div className="mongoDiv">
               <DiMongodb className="iconPic" />
