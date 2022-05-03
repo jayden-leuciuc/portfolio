@@ -8,14 +8,15 @@ import {
   FaReact,
   FaGitAlt,
 } from "react-icons/fa"
-import { DiMongodb } from "react-icons/di"
-import { GrGraphQl } from "react-icons/gr"
+import { DiMongodb, DiJava } from "react-icons/di"
+import { GrGraphQl, GrGatsbyjs } from "react-icons/gr"
+import { SiSpring } from "react-icons/si"
 
 import resume from "../downloads/Leuciuc Jayden Resume.pdf"
 
 function About() {
   return (
-    <div id="aboutId">
+    <div id="about">
       <div className="about-container">
         <div className="text-container">
           <h1>
@@ -51,39 +52,48 @@ function About() {
           </div>
           <h6>Technologies I use:</h6>
           <div className="icons">
-            <div className="hmtlDiv">
-              <FaHtml5 className="iconPic" />
-              <p className="iconText">Html5</p>
-            </div>
-            <div className="cssDiv">
-              <FaCss3 className="iconPic" />
-              <p className="iconText">Css3</p>
-            </div>
-            <div className="nodeDiv">
-              <FaNodeJs className="iconPic" />
-              <p className="iconText">Node.js</p>
-            </div>
-            <div className="reactDiv">
+            <div>
               <FaReact className="iconPic" />
               <p className="iconText">React.js</p>
             </div>
-            <div className="GatsbyDiv">
-              <FaReact className="iconPic" />
+            <div>
+              <FaNodeJs className="iconPic" />
+              <p className="iconText">Node.js</p>
+            </div>
+            <div>
+              <GrGatsbyjs className="iconPic" />
               <p className="iconText">Gatsby.js</p>
             </div>
-            <div className="sassDiv">
+            <div>
+              <DiJava className="iconPic" />
+              <p className="iconText">Java</p>
+            </div>
+            <div>
+              <SiSpring className="iconPic" />
+              <p className="iconText">Spring Boot</p>
+            </div>
+            <div>
+              <FaHtml5 className="iconPic" />
+              <p className="iconText">Html5</p>
+            </div>
+            <div>
+              <FaCss3 className="iconPic" />
+              <p className="iconText">Css3</p>
+            </div>
+
+            <div>
               <FaSass className="iconPic" />
               <p className="iconText">Sass</p>
             </div>
-            <div className="mongoDiv">
+            <div>
               <DiMongodb className="iconPic" />
               <p className="iconText">MongoDB</p>
             </div>
-            <div className="graphQLDiv">
+            <div>
               <GrGraphQl className="iconPic" />
               <p className="iconText">GraphQL</p>
             </div>
-            <div className="gitDiv">
+            <div>
               <FaGitAlt className="iconPic" />
               <p className="iconText">Git</p>
             </div>
