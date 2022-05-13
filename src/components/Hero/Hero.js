@@ -1,6 +1,5 @@
 import React from "react"
 import "./Hero.scss"
-import "../About/About"
 
 function Hero() {
   return (
@@ -10,9 +9,9 @@ function Hero() {
         <h1 className="hero-name">Jayden Leuciuc</h1>
         <p className="hero-description">Web Developer</p>
       </div>
-      <div className="icon-container">
-        {/*<AiOutlineArrowDown className="iconArrow" /> */}
-      </div>
+      {/*<div className="icon-container">
+        <AiOutlineArrowDown className="iconArrow" /> 
+      </div>*/}
     </div>
   )
 }

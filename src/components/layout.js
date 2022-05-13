@@ -9,7 +9,8 @@ import * as React from "react"
 import PropTypes from "prop-types"
 //import { useStaticQuery, graphql } from "gatsby"
 //import Header from "./header"
-
+import Header from "./Header/Header.component"
+import { Footer } from "./componentExport"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -25,7 +26,9 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <main>{children}</main>
+      {/* <Header />*/}
+      <main style={{ "background-color": "#000" }}>{children}</main>
+      <Footer />
     </>
   )
 }
