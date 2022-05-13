@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header />
+      {/* <Header />*/}
       <main style={{ "background-color": "#000" }}>{children}</main>
       <Footer />
     </>

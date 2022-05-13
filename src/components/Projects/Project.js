@@ -26,24 +26,44 @@ const Projects = () => {
       </div>
 */}
         <div className="image-container">
-          <a href={projectArr[2].liveLink}>
+          <a href={projectArr[4].liveLink}>
             <div className="project">
               <div className="project-overlay">
                 <div className="overlay-text">
                   <h1 className="overlay-header">
-                    {projectArr[2].projectTitle}
+                    {projectArr[4].projectTitle}
                   </h1>
-                  <p>{projectArr[2].projectType}</p>
+                  <p>{projectArr[4].projectType}</p>
                 </div>
               </div>
               <StaticImage
-                src={"../../images/covid19sc.JPG"}
-                alt={projectArr[2].imgAlt}
+                src={"../../images/miningstats.PNG"}
+                alt={projectArr[4].imgAlt}
                 className="project-img"
                 placeholder="none"
               />
             </div>
           </a>
+
+          <a href={projectArr[5].liveLink}>
+            <div className="project">
+              <div className="project-overlay">
+                <div className="overlay-text">
+                  <h1 className="overlay-header">
+                    {projectArr[5].projectTitle}
+                  </h1>
+                  <p>{projectArr[5].projectType}</p>
+                </div>
+              </div>
+              <StaticImage
+                src={"../../images/onlinestore.PNG"}
+                alt={projectArr[5].imgAlt}
+                className="project-img"
+                placeholder="none"
+              />
+            </div>
+          </a>
+
           <a href={projectArr[3].liveLink}>
             <div className="project">
               <div className="project-overlay">
@@ -62,6 +82,26 @@ const Projects = () => {
               />
             </div>
           </a>
+
+          <a href={projectArr[2].liveLink}>
+            <div className="project">
+              <div className="project-overlay">
+                <div className="overlay-text">
+                  <h1 className="overlay-header">
+                    {projectArr[2].projectTitle}
+                  </h1>
+                  <p>{projectArr[2].projectType}</p>
+                </div>
+              </div>
+              <StaticImage
+                src={"../../images/covid19sc.JPG"}
+                alt={projectArr[2].imgAlt}
+                className="project-img"
+                placeholder="none"
+              />
+            </div>
+          </a>
+
           <a href={projectArr[0].liveLink}>
             <div className="project">
               <div className="project-overlay">

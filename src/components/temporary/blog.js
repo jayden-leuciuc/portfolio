@@ -1,10 +1,12 @@
 import { graphql, Link } from "gatsby"
 import * as React from "react"
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-
+import Layout from "../layout"
+import Seo from "../seo"
+{
+  /* 
 const Blog = ({ data }) => (
+  
   <Layout>
     <Seo title="Blog" />
     <h1>Latest posts</h1>
@@ -22,6 +24,7 @@ const Blog = ({ data }) => (
     ))}
   </Layout>
 )
+  
 
 export const pageQuery = graphql`
   query BlogIndexQuery {
@@ -41,4 +44,5 @@ export const pageQuery = graphql`
   }
 `
 
-export default Blog
+export default Blog*/
+}
