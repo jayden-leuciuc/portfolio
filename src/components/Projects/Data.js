@@ -5,7 +5,7 @@ export const projectArray = [
     projectTitle: "Password Manager Project",
     projectDesc:
       "This project is a demonstration of my abilities in routes and rendering different components in react.",
-    imgSrc: "../../images/password-project-sc.png",
+    imgSrc: "../images/password-project-sc.png",
     imgAlt: "Project image",
     githubLink: "https://github.com/jayden-leuciuc/password-manager-app",
     liveLink: "https://password-sales.netlify.app",

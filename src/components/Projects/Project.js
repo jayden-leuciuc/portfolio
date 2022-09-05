@@ -37,7 +37,7 @@ const Projects = () => {
                 </div>
               </div>
               <StaticImage
-                src={"../../images/miningstats.PNG"}
+                src={"../../images/miningstats.png"}
                 alt={projectArr[4].imgAlt}
                 className="project-img"
                 placeholder="none"
