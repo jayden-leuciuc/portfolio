@@ -8,7 +8,7 @@ function Github() {
     <div className="github-project-container">
       <SingleProject
         title="Mining Stats"
-        description="A crypto dashboard that provides information about crypto currency mining."
+        description="A dashboard that provides information about crypto currency mining."
         tags={["React", "Express"]}
         image={
           <StaticImage
@@ -17,12 +17,14 @@ function Github() {
           className="github-project-image"
           placeholder="none"
           />}
+          githubLink="https://github.com/jayden-leuciuc/mining-stats"
+          liveLink="https://miningstatsjl.herokuapp.com/"
       />
 
         <SingleProject
         title="Github User Lookup"
-        description="test"
-        tags={["React"]}
+        description="A dashboard that displays information about a user in github."
+        tags={["React", "Express"]}
         image={
           <StaticImage
           src={"../../images/github-pages-sc.JPG"}
@@ -30,12 +32,14 @@ function Github() {
           className="github-project-image"
           placeholder="none"
           />}
+          githubLink="https://github.com/jayden-leuciuc/github-pages"
+          liveLink="https://github-page.netlify.app/"
       />
 
         <SingleProject
         title="Online Store"
-        description="test"
-        tags={["React"]}
+        description="A clothing-themed store."
+        tags={["React", "Express", "Firebase"]}
         image={
           <StaticImage
           src={"../../images/onlinestore.PNG"}
@@ -43,6 +47,8 @@ function Github() {
           className="github-project-image"
           placeholder="none"
           />}
+          githubLink="https://github.com/jayden-leuciuc/Online-store"
+          liveLink="https://online-store-jaydenl.herokuapp.com/"
       />
 
 

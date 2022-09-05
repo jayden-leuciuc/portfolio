@@ -1,8 +1,21 @@
 .github-container {
+  font-family: "Montserrat", sans-serif;
     background-color: white;
     display: flex;
     flex-flow: row wrap;
     max-height: fit-content;
+    a {
+      border: 1px solid #cc3735;
+      border-radius: 15px;
+      padding: 3px 15px;
+      color: black;
+      font-weight: 700;
+      &:hover{
+        color: white;
+        background-color: #cc3735;
+      }
+    }
+    
     .github-title-container {
       flex: 1;
       position: relative;
@@ -13,12 +26,8 @@
       .tag-container{
         display: flex;
         flex-flow: row wrap;
-        gap: 25px;
-        p{
-          border: 1px solid red;
-          border-radius: 5px;
-          padding: 3px 15px;
-        }
+        gap: 15px;
+        
       }
       h1 {
         margin: 0;
@@ -45,11 +54,18 @@
       flex: 2;
       .github-project-image{
         margin: 15px 0;
-        width: 50%;
+        width: 75%;
         border-radius: 5px;
       }
       hr{
         width: 100%;
+      }
+      .project-link-container{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 25px;
+        padding-bottom: 25px;
       }
     }
   }

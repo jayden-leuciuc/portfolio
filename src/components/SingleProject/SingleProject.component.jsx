@@ -2,7 +2,7 @@ import React from "react"
 import "./SingleProject.styles.scss"
 import { StaticImage } from "gatsby-plugin-image"
 
-const SingleProject = ({ title, description, tags, image }) => {
+const SingleProject = ({ title, description, tags, image, githubLink, liveLink }) => {
   return (
     <div className="github-container">
       <div className="github-title-container">
@@ -25,17 +25,17 @@ const SingleProject = ({ title, description, tags, image }) => {
         <div className="tag-container">
         {tags.map(tag => {
           return(
-            <p>{tag}</p>
+            <><a href={`https://github.com/search?q=user%3Ajayden-leuciuc+topic%3A${tag.toLowerCase()}`}>{tag}</a></>
           )
         })}
         </div>
       </div>
       <div className="github-description-container">
         {image}
-        <p>Github link</p>
-        <p>Hosted project link</p>
-        
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas enim doloribus corrupti ratione exercitationem minus delectus modi ipsam adipisci tempora tenetur repellendus eveniet cum, eum deserunt esse possimus voluptate officiis ullam sequi dolorem. Quod eligendi, porro magnam necessitatibus debitis perferendis nulla cum in ducimus tenetur itaque non. Enim, iste unde.</p>
+        <div className="project-link-container">
+        <a href={githubLink}>Github</a>
+        <a href={liveLink}>Live Project</a>
+        </div>
         <hr />
       </div>
     </div>
