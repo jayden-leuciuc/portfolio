@@ -9,6 +9,7 @@ module.exports = {
     siteUrl: `https://jaydenleuciuc.com/`,
   },
   plugins: [
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
     {
