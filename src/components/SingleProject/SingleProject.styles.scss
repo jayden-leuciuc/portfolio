@@ -1,0 +1,55 @@
+.github-container {
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    max-height: fit-content;
+    .github-title-container {
+      flex: 1;
+      position: relative;
+      padding-inline: 48px;
+      &:first-child {
+        margin-top: 16px;
+      }
+      .tag-container{
+        display: flex;
+        flex-flow: row wrap;
+        gap: 25px;
+        p{
+          border: 1px solid red;
+          border-radius: 5px;
+          padding: 3px 15px;
+        }
+      }
+      h1 {
+        margin: 0;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        border-left: 2px solid gray;
+        left: 12px;
+        top: 0;
+        bottom: 0;
+      }
+      .svg {
+        position: absolute;
+        left: 0;
+        background-color: white;
+      }
+    }
+    .github-description-container {
+      padding: 15px 0;
+      text-align: center;
+      background-color: white;
+      flex: 2;
+      .github-project-image{
+        margin: 15px 0;
+        width: 50%;
+        border-radius: 5px;
+      }
+      hr{
+        width: 100%;
+      }
+    }
+  }

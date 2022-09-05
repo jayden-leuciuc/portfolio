@@ -5,6 +5,7 @@ import Hero from "../components/Hero/Hero"
 import About from "../components/About/About"
 import Projects from "../components/Projects/Project"
 import Footer from "../components/Footer/Footer"
+import Github from "../components/Github/Github.component"
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
@@ -15,6 +16,7 @@ const BlogIndex = ({ data, location }) => {
         <Hero />
         <About />
         <Projects />
+        <Footer />
       </>
     )
   }
@@ -22,8 +24,8 @@ const BlogIndex = ({ data, location }) => {
   return (
     <>
       <Hero />
+      <Github />
       <About />
-      <Projects />
       <Footer />
     </>
   )
