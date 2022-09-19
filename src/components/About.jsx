@@ -4,10 +4,10 @@ import resume from "../../static/Leuciuc Jayden Resume.pdf";
 function About() {
   return (
     <div className="about-container">
-      <h1>
-        About<span id='pulse'>_</span>
-      </h1>
       <div className="about-text-container">
+        <h1>
+          About<span id='pulse'>_</span>
+        </h1>
         <p>
           Hi, i'm Jayden. I am a computer science student at the University of Tennessee, building responsive websites at KUB.
         </p>
