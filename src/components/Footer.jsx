@@ -1,7 +1,6 @@
 import React from "react"
-import "./Footer.scss"
-
 import {FaLinkedin, FaGithub} from "react-icons/fa"
+
 function Footer() {
   return (
     <div className="footer-container">

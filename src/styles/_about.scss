@@ -1,0 +1,72 @@
+.about-container {
+    height: 100%;
+    width: 100%;
+    background-color: #f3f1f1;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+    .text-container {
+      padding: 0 10vw;
+      color: #000;
+      height: 100%;
+      text-align: center;
+  
+      h1 {
+        font-size: clamp(1rem, 3vw, 4rem);
+        font-weight: bolder;
+        padding-top: 1vh;
+        span {
+          animation: pulse 1s ease-out infinite;
+        }
+      }
+      .p-container {
+        padding: 20px 8vw 0;
+        line-height: 1.5;
+        font-size: clamp(1rem, 2.5vw, 2rem);
+        a {
+          text-decoration: none;
+          color: #107e7d;
+          font-weight: bold;
+        }
+        a:hover {
+          color: #7dc5c5; //194242
+          transition: 0.5s ease-in;
+        }
+      }
+      h6 {
+        padding-top: 5rem;
+        font-size: clamp(1rem, 2.5vw, 3rem);
+      }
+      .icons {
+        padding: 10px 27vw 5rem 27vw;
+        font-size: clamp(1rem, 3vw, 3rem);
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        .iconText {
+          visibility: hidden;
+          position: absolute;
+          font-size: 1.5rem;
+        }
+        .iconPic:hover {
+          color: #107e7d;
+        }
+        .iconPic:hover + .iconText {
+          visibility: visible;
+        }
+      }
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

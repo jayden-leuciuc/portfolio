@@ -1,6 +1,5 @@
 import React from "react"
-import "./Github.styles.scss"
-import SingleProject from "../SingleProject/SingleProject.component"
+import SingleProject from "./SingleProject"
 import { StaticImage } from "gatsby-plugin-image"
 
 function Github() {
@@ -12,7 +11,7 @@ function Github() {
         tags={["React", "Express"]}
         image={
           <StaticImage
-          src={"../../images/miningstats.png"}
+          src={"../images/miningstats.png"}
           alt="alt"
           className="github-project-image"
           placeholder="none"
@@ -27,7 +26,7 @@ function Github() {
         tags={["React", "Express"]}
         image={
           <StaticImage
-          src={"../../images/github-pages-sc.JPG"}
+          src={"../images/github-pages-sc.JPG"}
           alt="alt"
           className="github-project-image"
           placeholder="none"
@@ -42,7 +41,7 @@ function Github() {
         tags={["React", "Express", "Firebase"]}
         image={
           <StaticImage
-          src={"../../images/onlinestore.PNG"}
+          src={"../images/onlinestore.PNG"}
           alt="alt"
           className="github-project-image"
           placeholder="none"

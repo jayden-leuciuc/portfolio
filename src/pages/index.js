@@ -1,25 +1,13 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
 
-import Hero from "../components/Hero/Hero"
-import About from "../components/About/About"
-import Projects from "../components/Projects/Project"
-import Footer from "../components/Footer/Footer"
-import Github from "../components/Github/Github.component"
+import Hero from "../components/Hero"
+import About from "../components/About"
+import Footer from "../components/Footer"
+import Github from "../components/Github"
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
-
-  if (posts.length === 0) {
-    return (
-      <>
-        <Hero />
-        <About />
-        <Projects />
-        <Footer />
-      </>
-    )
-  }
 
   return (
     <>

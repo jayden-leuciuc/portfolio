@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
-import "./Header.styles.scss"
 import scrollTo from "gatsby-plugin-smoothscroll"
+
 const Header = () => {
   return (
     <header>
