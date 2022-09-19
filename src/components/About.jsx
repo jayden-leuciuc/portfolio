@@ -7,7 +7,7 @@ function About() {
       <h1>
         About<span id='pulse'>_</span>
       </h1>
-      <div className="p-container">
+      <div className="about-text-container">
         <p>
           Hi, i'm Jayden. I am a computer science student at the University of Tennessee, building responsive websites at KUB.
         </p>
