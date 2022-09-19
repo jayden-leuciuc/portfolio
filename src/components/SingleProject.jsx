@@ -1,6 +1,4 @@
 import React from "react"
-import "./SingleProject.styles.scss"
-import { StaticImage } from "gatsby-plugin-image"
 
 const SingleProject = ({ title, description, tags, image, githubLink, liveLink }) => {
   return (

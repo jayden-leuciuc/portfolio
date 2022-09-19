@@ -1,16 +1,17 @@
 import React from "react"
-import "./Footer.scss"
-
 import {FaLinkedin, FaGithub} from "react-icons/fa"
+
 function Footer() {
   return (
     <div className="footer-container">
       <div className="text-container">
-        <span>
+        <p>
           Site Created and Built by Jayden Leuciuc{" "}
           <span className="visible"> | </span>
-        </span>
-        <div className="social-icons">
+        </p>
+        
+      </div>
+      <div className="social-icons">
           <a
             href="https://www.linkedin.com/in/jayden-leuciuc/"
             className="icon"
@@ -21,7 +22,6 @@ function Footer() {
             <FaGithub />
           </a>
         </div>
-      </div>
     </div>
   )
 }

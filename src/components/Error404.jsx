@@ -1,6 +1,6 @@
 import React from "react"
-import "./Error404.styles.scss"
 import { Link } from "gatsby"
+
 function Error404() {
   return (
     <div className="error404-container">
