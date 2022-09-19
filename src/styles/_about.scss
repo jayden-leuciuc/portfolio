@@ -21,9 +21,11 @@
         transition: 0.5s ease-in;
       }
     }
-
     p {
-      padding: 32px 0 0 0;
+      padding: 24px 0 0 0;
+      &:first-of-type{
+        padding-top: 0;
+      }
     }
   }
 

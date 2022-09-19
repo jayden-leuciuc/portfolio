@@ -1,5 +1,4 @@
 @import 'about';
-@import 'card';
 @import 'error404';
 @import 'footer';
 @import 'github.scss';
@@ -16,20 +15,40 @@ body {
   font-family: "Montserrat", sans-serif;
   max-width: 100%;
   overflow-x: none;
+  color: white;
+
   *{
     margin: 0;
   }
+
+  h1 {
+    font-size: clamp(32px, 3vw, 48px);
+    padding: 10px 0;
+  }
+
+  p {
+    font-size: clamp(16px, 2vw, 24px);
+    padding: 5px 0;
+  }
   a {
+    font-size: clamp(16px, 2vw, 24px);
     text-decoration: none;
     font-weight: bold;
+    padding: 5px 0;
   }
-  h1{
-    font-size: clamp(32px, 3vw, 48px);
-  }
-  h2{
 
-  }
-  p{
-    font-size: clamp(16px, 2vw, 24px);
+  button, .link {
+    color: white;
+    background-color: #c21f13;
+    border: none;
+    border-radius: 6px;
+    padding: 0 5px;
+    animation: bgColor 5s ease infinite;
+    margin: 20px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #cc3735;
+    }
   }
 }
