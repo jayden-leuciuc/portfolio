@@ -6,7 +6,7 @@ function Github() {
   return (
     <div className="github-project-container">
       <SingleProject
-        title="Mining Stats"
+        title="CryptoMinerInfo"
         description="Multi web application providing information about crypto currency mining."
         tags={["React", "Express"]}
         image={
