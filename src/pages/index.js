@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby"
 import Hero from "../components/Hero"
 import About from "../components/About"
 import Footer from "../components/Footer"
-import Github from "../components/Github"
+import Projects from "../components/Projects"
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
@@ -12,7 +12,7 @@ const BlogIndex = ({ data, location }) => {
   return (
     <>
       <Hero />
-      <Github />
+      <Projects />
       <About />
       <Footer />
     </>
