@@ -31,8 +31,12 @@ const SingleProject = ({ title, description, tags, image, githubLink, liveLink }
       <div className="github-description-container">
         {image}
         <div className="project-link-container">
-        <a href={githubLink}>Github</a>
-        <a href={liveLink}>Live Project</a>
+        {
+          githubLink ?  <a href={githubLink}>Github</a> : ""
+        }
+        {
+          liveLink ?  <a href={liveLink}>Live Project</a> : ""
+        }
         </div>
         <hr />
       </div>
