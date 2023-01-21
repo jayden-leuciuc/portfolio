@@ -11,13 +11,12 @@ function Github() {
         tags={["React", "Express"]}
         image={
           <StaticImage
-          src={"../images/miningstats.png"}
-          alt="alt"
+          src={"../images/cryptominerinfo.png"}
+          alt="CryptoMinerInfo project image"
           className="github-project-image"
           placeholder="none"
           />}
-          githubLink="https://github.com/jayden-leuciuc/mining-stats"
-          liveLink="https://miningstatsjl.herokuapp.com/"
+          liveLink="https://cryptominerinfo.com/"
       />
 
         <SingleProject
@@ -47,7 +46,7 @@ function Github() {
           placeholder="none"
           />}
           githubLink="https://github.com/jayden-leuciuc/Online-store"
-          liveLink="https://online-store-jaydenl.herokuapp.com/"
+          liveLink="https://online-store-jl.netlify.app/"
       />
 
 
