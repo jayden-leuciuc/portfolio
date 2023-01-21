@@ -6,11 +6,12 @@
     max-height: fit-content;
 
     a {
-        border: 1px solid #cc3735;
-        border-radius: 15px;
-        padding: 3px 15px;
+        border: 2px solid #cc3735;
+        border-radius: 5px;
+        padding: 3px 10px;
         color: black;
-        font-weight: 700;
+        font-weight: 500;
+        font-size: 15px;
 
         &:hover {
             color: white;
@@ -56,11 +57,11 @@
         padding: 15px 0;
         text-align: center;
         background-color: white;
-        flex: 2;
+        flex: 1;
 
         .github-project-image {
             margin: 15px 0;
-            width: 75%;
+            width: 100%;
             border-radius: 5px;
         }
 
@@ -80,12 +81,24 @@
 
 @media screen and (max-width: 675px) {
     .github-container{
-        .github-description-container {
-            
-            display: none;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+        .github-title-container{
+            border: none;
+            &::before{
+                border: none;
+            }
+            svg{
+                display: none;
+            }
+            .tag-container{
+                justify-content: center;
+            }
         }
         .project-link-container{
-            margin-bottom: 15px;
+            border: none;
+            padding: none;
         }
     }
     
