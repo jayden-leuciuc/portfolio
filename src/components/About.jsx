@@ -17,10 +17,6 @@ function About() {
         <a href="mailto: leuciucjayden@gmail.com">
           leuciucjayden@gmail.com
         </a>
-        <p>Resume:</p>
-        <a href={resume} target="_blank" rel="noopener noreferrer">
-          Leuciuc, Jayden Resume 2023
-        </a>
       </div>
     </div>
   );
