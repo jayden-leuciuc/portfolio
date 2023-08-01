@@ -1,5 +1,4 @@
 import React from "react";
-import resume from "../../static/Leuciuc Jayden Resume.pdf";
 
 function About() {
   return (
