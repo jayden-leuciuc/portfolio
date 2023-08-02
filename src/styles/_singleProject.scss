@@ -1,0 +1,105 @@
+.github-container {
+    font-family: "Montserrat", sans-serif;
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    max-height: fit-content;
+
+    a {
+        border: 2px solid #cc3735;
+        border-radius: 5px;
+        padding: 3px 10px;
+        color: black;
+        font-weight: 500;
+        font-size: 15px;
+
+        &:hover {
+            color: white;
+            background-color: #cc3735;
+        }
+    }
+
+    .github-title-container {
+        flex: 1;
+        position: relative;
+        padding-inline: 48px;
+
+        &:first-child {
+            margin-top: 16px;
+        }
+
+        .tag-container {
+            display: flex;
+            flex-flow: row wrap;
+            gap: 15px;
+            margin-bottom: 15px !important;
+
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            border-left: 2px solid gray;
+            left: 12px;
+            top: 0;
+            bottom: 0;
+        }
+
+        .svg {
+            position: absolute;
+            left: 0;
+            background-color: white;
+        }
+        
+    }
+
+    .github-description-container {
+        padding: 15px 0;
+        text-align: center;
+        background-color: white;
+        flex: 1;
+
+        .github-project-image {
+            margin: 15px 0;
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        hr {
+            width: 100%;
+        }
+
+        .project-link-container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            gap: 25px;
+            padding-bottom: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .github-container{
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+        .github-title-container{
+            border: none;
+            &::before{
+                border: none;
+            }
+            svg{
+                display: none;
+            }
+            .tag-container{
+                justify-content: center;
+            }
+        }
+        .project-link-container{
+            border: none;
+            padding: none;
+        }
+    }
+    
+}

@@ -1,0 +1,34 @@
+.error404-container {
+  color: white;
+  background-color: black;
+  height: 100vh;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  width: 100vw;
+  *{
+    padding: 15px;
+  }
+}
+
+@keyframes bgColor {
+  0% {
+    background-color: #fc3836;
+  }
+
+  25% {
+    background-color: #cc3735;
+  }
+
+  50% {
+    background-color: #c21f13;
+  }
+
+  75% {
+    background-color: #cc3735;
+  }
+
+  100% {
+    background-color: #fc3836;
+  }
+}

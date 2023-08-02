@@ -1,0 +1,47 @@
+.about-container {
+  color: black;
+  background-color: #f3f1f1;
+  font-weight: 500;
+  padding: 20px 0;
+
+  .about-text-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+
+    #pulse {
+      animation: pulse 1s ease-out infinite;
+    }
+
+    a {
+      color: #107e7d;
+
+      &:hover {
+        color: #7dc5c5; //194242
+        transition: 0.5s ease-in;
+      }
+    }
+    p {
+      padding: 24px 0 0 0;
+      &:first-of-type{
+        padding-top: 0;
+      }
+    }
+  }
+
+}
+
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
