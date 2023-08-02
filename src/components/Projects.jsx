@@ -1,55 +1,29 @@
 import React from "react"
 import SingleProject from "./SingleProject"
-import { StaticImage } from "gatsby-plugin-image"
+import cryptoImage from "../images/cryptominerinfo.png"
+import nrgLogo from "../images/nrg-logo.svg"
 
 function Github() {
   return (
     <div className="github-project-container">
       <SingleProject
         title="CryptoMinerInfo"
+        subHeading="Personal Project"
         description="Multi web application providing information about crypto currency mining."
         tags={["React", "Express"]}
-        image={
-          <StaticImage
-          src={"../images/cryptominerinfo.png"}
-          alt="CryptoMinerInfo project image"
-          className="github-project-image"
-          placeholder="none"
-          />}
-          liveLink="https://cryptominerinfo.com/"
+        imageLink={cryptoImage}
+        imageAlt="crypto miner info"
+        liveLink="https://cryptominerinfo.com/"
       />
-
-        <SingleProject
-        title="Github User Lookup"
-        description="A dashboard that displays information about a user in github."
-        tags={["React", "Express"]}
-        image={
-          <StaticImage
-          src={"../images/github-pages-sc.JPG"}
-          alt="alt"
-          className="github-project-image"
-          placeholder="none"
-          />}
-          githubLink="https://github.com/jayden-leuciuc/github-pages"
-          liveLink="https://github-page.netlify.app/"
+      <SingleProject
+        title="nrg-ui"
+        subHeading="Open-source contributor"
+        description={`"...an opinionated UI addon based on how KUB scaffolds web applications."`}
+        tags={["Ember"]}
+        imageLink={nrgLogo}
+        imageAlt="nrg-ui"
+        liveLink="https://knoxville-utilities-board.github.io/ember-nrg-ui/"
       />
-
-        <SingleProject
-        title="Online Store"
-        description="A clothing-themed store."
-        tags={["React", "Express", "Firebase"]}
-        image={
-          <StaticImage
-          src={"../images/onlinestore.PNG"}
-          alt="alt"
-          className="github-project-image"
-          placeholder="none"
-          />}
-          githubLink="https://github.com/jayden-leuciuc/Online-store"
-          liveLink="https://online-store-jl.netlify.app/"
-      />
-
-
     </div>
   )
 }
