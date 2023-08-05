@@ -23,6 +23,7 @@ function Github() {
         imageLink={nrgLogo}
         imageAlt="nrg-ui"
         liveLink="https://knoxville-utilities-board.github.io/ember-nrg-ui/"
+        githubLink="https://github.com/knoxville-utilities-board/ember-nrg-ui"
       />
     </div>
   )
