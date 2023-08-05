@@ -1,6 +1,6 @@
 import React from "react"
 import SingleProject from "./SingleProject"
-import cryptoImage from "../images/cryptominerinfo.png"
+import cryptoImage from "../images/cryptominerinfo.svg"
 import nrgLogo from "../images/nrg-logo.svg"
 
 function Github() {
