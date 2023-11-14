@@ -2,12 +2,20 @@ import React from "react"
 import SingleProject from "./SingleProject"
 import cryptoImage from "/cryptominerinfo.svg"
 import nrgLogo from "/nrg-logo.svg"
-import cryptoImage from "../images/cryptominerinfo.svg"
-import nrgLogo from "../images/nrg-logo.svg"
+import knoxflowLogo from "/knoxflowLogo.png"
 
 function Github() {
   return (
     <div className="github-project-container">
+      <SingleProject
+        title="KnoxFlow"
+        subHeading="Developer"
+        description="Pressure Washing company website."
+        tags={["Vite"]}
+        imageLink={knoxflowLogo}
+        imageAlt="knoxflow logo"
+        liveLink="https://knoxflow.com/"
+      />
       <SingleProject
         title="CryptoMinerInfo"
         subHeading="Personal Project"
