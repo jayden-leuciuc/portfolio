@@ -1,5 +1,7 @@
 import React from "react"
 import SingleProject from "./SingleProject"
+import cryptoImage from "/cryptominerinfo.svg"
+import nrgLogo from "/nrg-logo.svg"
 import cryptoImage from "../images/cryptominerinfo.svg"
 import nrgLogo from "../images/nrg-logo.svg"
 
